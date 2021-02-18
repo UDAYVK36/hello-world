@@ -48,8 +48,8 @@
 
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
-            
-          <reportPlugins>
+         <reporting>
+          <Plugins>
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
@@ -69,7 +69,10 @@
             <plugin>
               <artifactId>maven-surefire-report-plugin</artifactId>
             </plugin>
-
+            </Plugin>
+            </reporting>         
+            
+            <configuration>  
             <plugin>
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>findbugs-maven-plugin</artifactId>
@@ -79,7 +82,9 @@
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>taglist-maven-plugin</artifactId>
             </plugin>
-          </reportPlugins>
+         </configuration>      
+           </reporting>
+           </Plugins>
       </plugin>
     </plugins>
 
